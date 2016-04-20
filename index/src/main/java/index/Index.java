@@ -62,7 +62,7 @@ public class Index {
                 System.out.println( "files1:" + files1 );
                 // writing to JSON
                 obj.put( "path", files1 );
-                File f = new File( "D:/Neil/linkshw3.json" );
+                File f = new File( "D:/Harsheel/linkshw3.json" );
                 BufferedWriter file1 = new BufferedWriter( new FileWriter( f,
                     true ) );
                 try
@@ -97,7 +97,7 @@ public class Index {
     {
         System.out.println( "test inside index" );
         ArrayList<String> ranking = new ArrayList<String>();
-        final InputStream in = new FileInputStream( "D:/Neil/" + c );
+        final InputStream in = new FileInputStream( "D:/Harsheel/" + c );
         try
         {
             for( @SuppressWarnings("rawtypes")
@@ -211,7 +211,7 @@ public class Index {
                     
                     
                         FileInputStream fstream = new FileInputStream(
-                            "D:/Neil/" + stw );
+                            "D:/Harsheel/" + stw );
                         BufferedReader br = new BufferedReader(
                             new InputStreamReader( fstream ) );
                         String strLine;
@@ -234,7 +234,7 @@ public class Index {
                             obj.put( "frequency",
                                 Collections.frequency( StemmedSET, word ) );
                         }
-                        File f2 = new File( "D:/Neil/Indexed.json" );
+                        File f2 = new File( "D:/Harsheel/Indexed.json" );
                         BufferedWriter file2 = new BufferedWriter(
                             new FileWriter( f2, true ) );
                         try
@@ -284,7 +284,7 @@ public class Index {
     {
         // To Crawl documents inside folders of folders
         ArrayList<File> files = new ArrayList<File>();
-        String directoryname = "D:/Neil/wiki-small";
+        String directoryname = "D:/Harsheel/wiki-small";
         Index f = new Index();
         try
         {
