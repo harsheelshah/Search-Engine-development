@@ -24,7 +24,7 @@ public class Ranking {
         throws IOException
     {
 
-        final InputStream in = new FileInputStream( "D:/Neil/Indexed.json" );
+        final InputStream in = new FileInputStream( "D:/Harsheel/Indexed.json" );
 
         // Map<String, Integer> words = new HashMap<String, Integer>();
         
@@ -99,7 +99,7 @@ public class Ranking {
                 obj.put( "weight", weight );
                 obj.put( "url", url );
 
-                File f4 = new File( "D:/Neil/ranking.json" );
+                File f4 = new File( "D:/Harsheel/ranking.json" );
                 BufferedWriter file2 = new BufferedWriter( new FileWriter( f4,
                     true ) );
                 try
