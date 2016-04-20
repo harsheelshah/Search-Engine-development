@@ -1,13 +1,5 @@
 package extractor;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -32,7 +24,7 @@ public class Extraction {
 		// String cf = "D:/crawler3-app/target/"+c;
 		// InputStream in = new ByteArrayInputStream(cf.getBytes("UTF-8"));
 
-		final InputStream in = new FileInputStream("D:/Neil/" + c);
+		final InputStream in = new FileInputStream("D:/Harsheel/" + c);
 
 		try {
 			for (@SuppressWarnings("rawtypes")
@@ -60,7 +52,7 @@ public class Extraction {
 						String name = metadata.names()[i];
 						obj.put(name, metadata.get(name));
 					}
-					File f2 = new File("D:/Neil/Extract.json");
+					File f2 = new File("D:/Harsheel/Extract.json");
 					BufferedWriter file2 = new BufferedWriter(new FileWriter(
 							f2, true));
 					try {
