@@ -29,7 +29,7 @@ public class RankingTest {
         JSONObject obj = new JSONObject();
         Map<Double, String> result = new LinkedHashMap<Double, String>();
 
-        final InputStream in = new FileInputStream( "D:\\Neil\\ranking.json" );
+        final InputStream in = new FileInputStream( "D:\\Harsheel\\ranking.json" );
 
         Map<String, Double> words = new HashMap<String, Double>();
 
@@ -85,7 +85,7 @@ public class RankingTest {
                 // obj.put("rank",r);
                 i++;
 
-                File f4 = new File( "D:/Neil/rankingResult.json" );
+                File f4 = new File( "D:/Harsheel/rankingResult.json" );
                 BufferedWriter file2 = new BufferedWriter( new FileWriter( f4,
                     true ) );
                 try
