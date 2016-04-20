@@ -49,7 +49,7 @@ public class Crawl {
 		InputStream input = url.openStream(); // reads from connected url
 
 		// creates new file dir
-		File theDir = new File("D:\\Neil");
+		File theDir = new File("D:\\Harsheel");
 		if (!theDir.exists()) {
 			try {
 				theDir.mkdir();
@@ -86,7 +86,7 @@ public class Crawl {
 		obj.put("Last entry date", new Date(hpCon.getLastModified()));
 
 		@SuppressWarnings("unused")
-		String dir = "D:\\Neil";
+		String dir = "D:\\Harsheel";
 		try {
 			String w = hpCon.getContentType(); // gets the content type of html
 			String id = UUID.randomUUID().toString();
@@ -94,10 +94,10 @@ public class Crawl {
 			if (w.contains("html")) {
 				ReadableByteChannel rbc = Channels.newChannel(url.openStream());//channel reads byte by byte
 				@SuppressWarnings("resource")
-				FileOutputStream fos = new FileOutputStream("D:/Neil/" + id
+				FileOutputStream fos = new FileOutputStream("D:/Harsheel/" + id
 						+ ".html");
 				fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
-				String path = "D:/Neil/" + id + ".html";
+				String path = "D:/Harsheel/" + id + ".html";
 				linklist2.add(path);
 				i++;
 				obj.put("storage", path);
@@ -142,7 +142,7 @@ public class Crawl {
 				}
 		}
 
-		File f = new File("D:/Neil/Crawl.json");
+		File f = new File("D:/Harsheel/Crawl.json");
 
 		BufferedWriter file = new BufferedWriter(new FileWriter(f, true));
 		try {
