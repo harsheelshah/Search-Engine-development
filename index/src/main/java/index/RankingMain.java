@@ -10,7 +10,7 @@ public class RankingMain {
 		try {
 
 			LinkedHashMap<String, Integer> WordsAndDocCoutnt = new FindDF()
-					.findDF("D:/Neil/Indexed.json");
+					.findDF("D:/Harsheel/Indexed.json");
 
 			new Ranking().rank(WordsAndDocCoutnt);
 
